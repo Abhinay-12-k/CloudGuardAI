@@ -1,9 +1,9 @@
 services:
   - type: web
     name: cloudguard-ai
-    runtime: static
+    env: static
     buildCommand: npm ci && npm run build
-    staticPublishPath: ./dist
+    staticPublishPath: dist
     pullRequestPreviewsEnabled: false
     headers:
       - path: /*
